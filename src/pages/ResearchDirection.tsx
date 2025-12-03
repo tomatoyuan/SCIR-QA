@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import ResearchCard from '../components/ResearchCard'
 import FlowDiagram from '../components/FlowDiagram'
+import DocumentIntelligenceDiagram from '../components/DocumentIntelligenceDiagram'
 import { researchDirections } from '../data/researchData'
 
 function ResearchDirection() {
@@ -43,7 +44,11 @@ function ResearchDirection() {
           {direction.title[lang]}
         </h2>
         <p className="text-gray-600 text-lg mb-6">{direction.description[lang]}</p>
-        <FlowDiagram diagram={direction.flowDiagram} directionId={direction.id} />
+        {direction.id === 'document-intelligence' ? (
+          <DocumentIntelligenceDiagram direction={direction} />
+        ) : (
+          <FlowDiagram diagram={direction.flowDiagram} directionId={direction.id} />
+        )}
       </div>
 
       <div>

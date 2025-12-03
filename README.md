@@ -107,6 +107,9 @@ Edit `src/data/researchData.ts` to add or modify research directions, research p
       authors: 'Author 1, Author 2',
       venue: 'Conference/Journal',
       year: '2024',
+      // 可选：在 ResearchPoint 页面左侧展示的论文配图/缩略图
+      // 建议放在 public/images 下，例如 /images/construction_process.png
+      thumbnail: '/images/your-figure.png',
       links: {
         paper: 'https://arxiv.org/abs/xxxx.xxxxx',
         code: 'https://github.com/...',
@@ -124,6 +127,40 @@ Edit `src/data/researchData.ts` to add or modify research directions, research p
   ]
 }
 ```
+
+### Adding Paper Thumbnails (Figures)
+
+On each research point detail page (`ResearchPoint`), papers are shown as **left image + right text** cards.  
+You can optionally add a figure (e.g., from the paper) for each paper as follows:
+
+1. **Prepare the image**
+   - Put your image under `public/images`, for example:
+     - `public/images/construction_process.png`
+
+2. **Set the `thumbnail` field in `src/data/researchData.ts`**
+   - In the corresponding paper object, add a `thumbnail` path:
+
+   ```typescript
+   papers: [
+     {
+       title: 'Weakly Supervised Reasoning Clue-Driven Semantic Parsing',
+       authors: 'Author 1, Author 2',
+       venue: 'Conference/Journal',
+       year: '2024',
+       thumbnail: '/images/construction_process.png', // relative to public/
+       links: {
+         paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+         website: 'https://xxx',
+         code: 'https://github.com/xxx',
+         demo: 'https://xxx',
+       },
+     },
+   ]
+   ```
+
+3. **Fallback behavior**
+   - If `thumbnail` is **not** set, the UI will show a neutral placeholder card with 📄 and a hint
+     (“Add figure from your paper here”), so you can gradually add figures later.
 
 ## Deployment to GitHub Pages
 
