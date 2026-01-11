@@ -6,7 +6,7 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 
 function App() {
   return (
-    <BrowserRouter basename="/SCIR-QA">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-between items-center mb-8">
