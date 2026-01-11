@@ -1,0 +1,20 @@
+name: Deploy to 4EVERLAND on push
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  trigger-4everland-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger 4EVERLAND Deploy Hook
+        env:
+          FOUR_EVERLAND_DEPLOY_HOOK: ${{ secrets.FOUR_EVERLAND_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$FOUR_EVERLAND_DEPLOY_HOOK" ]; then
+            echo "Missing secret FOUR_EVERLAND_DEPLOY_HOOK" >&2
+            exit 1
+          fi
+          curl -s -X POST "$FOUR_EVERLAND_DEPLOY_HOOK" -H "Content-Type: application/json" -d '{}' 
+          echo "Triggered 4EVERLAND deploy hook."
