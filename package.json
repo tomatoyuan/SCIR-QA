@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "build:ghpages": "vite build --base=/SCIR-QA/",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build:ghpages && gh-pages -d dist"
   },
   "devDependencies": {
     "@types/react": "^19.2.7",
