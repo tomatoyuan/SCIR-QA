@@ -971,3 +971,453 @@ code {
 .app-item.app-yellow {
   background: #fff2cc;
 }
+
+/* Semantic parsing static diagram styles (scoped) */
+.semantic-diagram {
+  --border-black: #222;
+  --main-blue: #2c4c83;
+  --bg-gray: #f9f9f9;
+  --dashed-color: #2f5597;
+
+  --light-blue-bg: #e1eafc;
+  --code-bg: #f9f9f9;
+  --code-pink: #d9469e;
+  --code-gray: #666;
+  --code-orange: #e08b26;
+  --model-bg: #b4c7e7;
+  --model-border: #4472c4;
+  --exec-bg: #f4b084;
+  --exec-border: #c65911;
+  --result-bg: #e2efda;
+  --result-border: #548235;
+
+  --orange-text: #d96d00;
+  --blue-light-box: #e6f2ff;
+
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #333;
+}
+
+.semantic-diagram .container {
+  display: flex;
+  gap: 20px;
+  width: 1450px;
+}
+
+.semantic-diagram .box-border {
+  border: 2px solid var(--border-black);
+  border-radius: 16px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.semantic-diagram .col-left {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.semantic-diagram .header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.semantic-diagram .main-title {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+}
+
+.semantic-diagram .sub-title-u {
+  font-family: "KaiTi", "楷体", serif;
+  font-size: 16px;
+  color: var(--main-blue);
+  font-weight: bold;
+  border-bottom: 1.5px solid var(--main-blue);
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+.semantic-diagram .dashed-box-left {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px dashed var(--dashed-color);
+  border-radius: 12px;
+  padding: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.semantic-diagram .arrow-wrapper {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.semantic-diagram .arrow-svg {
+  width: 14px;
+  height: 14px;
+  fill: #333;
+}
+
+.semantic-diagram .svg-icon {
+  display: block;
+}
+
+.semantic-diagram .query-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.semantic-diagram .vertical-text-left {
+  writing-mode: vertical-lr;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #333;
+  text-align: center;
+}
+
+.semantic-diagram .query-bubble {
+  flex: 1;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.semantic-diagram .db-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.semantic-diagram .db-text {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.semantic-diagram .model-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.semantic-diagram .model-label {
+  flex: 1;
+  background: var(--model-bg);
+  border: 1px solid var(--model-border);
+  border-radius: 6px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.semantic-diagram .content-split {
+  display: flex;
+  gap: 8px;
+}
+
+.semantic-diagram .left-col-inner {
+  flex: 1.4;
+  border-right: 1px dashed #ccc;
+  padding-right: 6px;
+}
+
+.semantic-diagram .code-block {
+  background: var(--code-bg);
+  font-family: Consolas, Monaco, monospace;
+  font-size: 9px;
+  line-height: 1.5;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.semantic-diagram .kw {
+  color: var(--code-pink);
+  font-weight: bold;
+}
+
+.semantic-diagram .var {
+  color: var(--code-gray);
+}
+
+.semantic-diagram .num {
+  color: var(--code-orange);
+  font-weight: bold;
+}
+
+.semantic-diagram .tag-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+}
+
+.semantic-diagram .right-col-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.semantic-diagram .reasoning-bubble {
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 9px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.semantic-diagram .exec-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.semantic-diagram .exec-btn {
+  background: var(--exec-bg);
+  border: 1px solid var(--exec-border);
+  border-radius: 8px;
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.semantic-diagram .result-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.semantic-diagram .result-tag {
+  background: var(--result-bg);
+  border: 1px solid var(--result-border);
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.semantic-diagram .col-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.semantic-diagram .problem-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  margin: 5px 0;
+}
+
+.semantic-diagram .problem-text {
+  color: var(--orange-text);
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.semantic-diagram .center-row {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.semantic-diagram .data-label-vertical {
+  writing-mode: vertical-lr;
+  background: #eee;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 10px 6px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.semantic-diagram .research-quadrant {
+  flex: 1;
+  display: flex;
+  gap: 15px;
+}
+
+.semantic-diagram .research-box {
+  flex: 1;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.semantic-diagram .research-box-clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.semantic-diagram .research-box-clickable:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  border-color: #2563eb;
+}
+
+.semantic-diagram .research-box-clickable:active {
+  transform: translateY(-1px) scale(0.99);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.semantic-diagram .rb-title {
+  color: var(--main-blue);
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.semantic-diagram .rb-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+}
+
+.semantic-diagram .tag {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+}
+
+.semantic-diagram .dashed-box-center {
+  border: 1.5px dashed #666;
+  border-radius: 8px;
+  background: var(--blue-light-box);
+  padding: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.semantic-diagram .flow-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.semantic-diagram .flow-block {
+  background: #dcebf7;
+  border: 1px solid #abc;
+  padding: 6px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 11px;
+  flex: 1;
+}
+
+.semantic-diagram .transition-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.semantic-diagram .col-right {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.semantic-diagram .col-right .problem-text {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.semantic-diagram .col-right .problem-text:hover {
+  transform: translateY(-2px);
+  color: #b45309; /* 深一点的橙色高亮 */
+}
+
+.semantic-diagram .attack-list {
+  background: #e1eafc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.semantic-diagram .synthesis-box {
+  background: #dcebf7;
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.semantic-diagram .defense-box {
+  background: #e6f2ff;
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.semantic-diagram .col-right .box-border {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.semantic-diagram .col-right .box-border:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  border-color: #2563eb; /* 蓝色描边强化“可点击”感 */
+}
+
+.semantic-diagram .col-right .box-border:active {
+  transform: translateY(-1px) scale(0.99);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.semantic-diagram .arrow-down {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  margin: 5px 0;
+}

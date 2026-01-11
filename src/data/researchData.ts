@@ -191,12 +191,13 @@ export const researchDirections: ResearchDirection[] = [
         },
         papers: [
           {
-            title: 'Weakly Supervised Reasoning Clue-Driven Semantic Parsing',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
+            title:
+              'Robust and Resource-efficient Table-based Fact Verification Through Multi-aspect Adversarial Contrastive Learning',
+            authors: 'Yuan et al.',
+            venue: 'Information Processing & Management (JCR Q1 / 中科院一区 TOP, SCI/ESI收录)',
             year: '2024',
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: 'https://doi.org/10.1016/j.ipm.2024.103853',
             },
           },
         ],
@@ -213,12 +214,13 @@ export const researchDirections: ResearchDirection[] = [
         },
         papers: [
           {
-            title: 'Unsupervised Logic Consistency-Driven Semantic Parsing',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
-            year: '2024',
+            title:
+              'SCoT-SQL: A Chain-of-Thought Guided Text-to-SQL Data Synthesis Method (暂定题目, CCIR 2025)',
+            authors: 'Qianhao et al.',
+            venue: 'CCIR 2025 (推荐至《计算机研究与发展》)',
+            year: '2025',
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: '',
             },
           },
         ],
@@ -235,12 +237,14 @@ export const researchDirections: ResearchDirection[] = [
         },
         papers: [
           {
-            title: 'Continuous Semantic Parsing for SQL Combinatorial Generalization',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
-            year: '2024',
+            title:
+              'Filling Memory Gaps: Enhancing Continual Semantic Parsing via SQL Syntax Variance-Guided LLMs Without Real Data Replay',
+            authors: 'Tom et al.',
+            venue: 'AAAI 2025 (Oral, TOP 4.6%, CCF-A)',
+            year: '2025',
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: 'https://dl.acm.org/doi/10.1609/aaai.v39i23.34644',
+              code: 'https://github.com/tom68-ll/LECSP',
             },
           },
         ],
@@ -257,12 +261,14 @@ export const researchDirections: ResearchDirection[] = [
         },
         papers: [
           {
-            title: 'Continuous Semantic Parsing for Parameter Knowledge Sharing',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
-            year: '2024',
+            title:
+              'Discarding the Crutches: Adaptive Parameter-Efficient Expert Meta-Learning for Continual Semantic Parsing',
+            authors: 'Tom et al.',
+            venue: 'COLING 2025 (Oral, CCF-B)',
+            year: '2025',
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: 'https://aclanthology.org/2025.coling-main.240/',
+              code: 'https://github.com/tom68-ll/APEX',
             },
           },
         ],
@@ -279,12 +285,25 @@ export const researchDirections: ResearchDirection[] = [
         },
         papers: [
           {
-            title: 'Database Privacy-aware LLM Secure Semantic Method',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
+            title:
+              'SecureSQL: Evaluating Data Leakage of Large Language Models as Natural Language Interfaces to Databases',
+            authors: 'Song et al.',
+            venue: 'EMNLP 2024 Findings (CCF-B)',
             year: '2024',
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: 'https://aclanthology.org/2024.findings-emnlp.346/',
+              code: 'https://github.com/JacobiSong/SecureSQL',
+            },
+          },
+          {
+            title:
+              'SafeNLIDB: A Privacy-Preserving Safety Alignment Framework for LLM-based Natural Language Database Interfaces',
+            authors: 'Tom et al.',
+            venue: 'AAAI 2026 (CCF-A)',
+            year: '2026',
+            links: {
+              paper: 'https://arxiv.org/abs/2511.06778',
+              code: 'https://github.com/tom68-ll/SAFENLIDB',
             },
           },
         ],

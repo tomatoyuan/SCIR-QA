@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import FlowDiagram from '../components/FlowDiagram'
 import DocumentIntelligenceDiagram from '../components/DocumentIntelligenceDiagram'
+import SemanticParsingDiagram from '../components/SemanticParsingDiagram'
 import { researchDirections } from '../data/researchData'
 
 function Home() {
@@ -45,6 +46,8 @@ function Home() {
           </div>
           {direction.id === 'document-intelligence' ? (
             <DocumentIntelligenceDiagram direction={direction} />
+          ) : direction.id === 'semantic-parsing' ? (
+            <SemanticParsingDiagram />
           ) : (
             <FlowDiagram diagram={direction.flowDiagram} directionId={direction.id} />
           )}

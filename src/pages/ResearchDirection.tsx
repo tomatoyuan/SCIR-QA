@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import ResearchCard from '../components/ResearchCard'
 import FlowDiagram from '../components/FlowDiagram'
 import DocumentIntelligenceDiagram from '../components/DocumentIntelligenceDiagram'
+import SemanticParsingDiagram from '../components/SemanticParsingDiagram'
 import { researchDirections } from '../data/researchData'
 
 function ResearchDirection() {
@@ -40,12 +41,12 @@ function ResearchDirection() {
       </div>
 
       <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          {direction.title[lang]}
-        </h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">{direction.title[lang]}</h2>
         <p className="text-gray-600 text-lg mb-6">{direction.description[lang]}</p>
         {direction.id === 'document-intelligence' ? (
           <DocumentIntelligenceDiagram direction={direction} />
+        ) : direction.id === 'semantic-parsing' ? (
+          <SemanticParsingDiagram />
         ) : (
           <FlowDiagram diagram={direction.flowDiagram} directionId={direction.id} />
         )}
