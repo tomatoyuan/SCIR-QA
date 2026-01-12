@@ -195,6 +195,7 @@ export const researchDirections: ResearchDirection[] = [
               'Robust and Resource-efficient Table-based Fact Verification Through Multi-aspect Adversarial Contrastive Learning',
             authors: 'Yuan et al.',
             venue: 'Information Processing & Management (JCR Q1 / 中科院一区 TOP, SCI/ESI收录)',
+            thumbnail: '/images/1.png', // 或者完整的线上 URL
             year: '2024',
             links: {
               paper: 'https://doi.org/10.1016/j.ipm.2024.103853',
@@ -219,6 +220,7 @@ export const researchDirections: ResearchDirection[] = [
             authors: 'Qianhao et al.',
             venue: 'CCIR 2025 (推荐至《计算机研究与发展》)',
             year: '2025',
+            thumbnail: '/images/2.png', // 或者完整的线上 URL
             links: {
               paper: '',
             },
@@ -242,6 +244,7 @@ export const researchDirections: ResearchDirection[] = [
             authors: 'Tom et al.',
             venue: 'AAAI 2025 (Oral, TOP 4.6%, CCF-A)',
             year: '2025',
+            thumbnail: '/images/3.png', // 或者完整的线上 URL
             links: {
               paper: 'https://dl.acm.org/doi/10.1609/aaai.v39i23.34644',
               code: 'https://github.com/tom68-ll/LECSP',
@@ -266,6 +269,7 @@ export const researchDirections: ResearchDirection[] = [
             authors: 'Tom et al.',
             venue: 'COLING 2025 (Oral, CCF-B)',
             year: '2025',
+            thumbnail: '/images/4.png', // 或者完整的线上 URL
             links: {
               paper: 'https://aclanthology.org/2025.coling-main.240/',
               code: 'https://github.com/tom68-ll/APEX',
@@ -290,6 +294,7 @@ export const researchDirections: ResearchDirection[] = [
             authors: 'Song et al.',
             venue: 'EMNLP 2024 Findings (CCF-B)',
             year: '2024',
+            thumbnail: '/images/5.png', // 或者完整的线上 URL
             links: {
               paper: 'https://aclanthology.org/2024.findings-emnlp.346/',
               code: 'https://github.com/JacobiSong/SecureSQL',
@@ -501,17 +506,27 @@ export const researchDirections: ResearchDirection[] = [
           en: 'Generate chain-of-thought data using templates or examples through a teacher-student model approach, training the student model to produce structured outputs.',
         },
         papers: [
+          // {
+          //   title: 'Constructing Document Reasoning Data for Question Answering',
+          //   authors: 'Author 1, Author 2',
+          //   venue: 'Conference/Journal',
+          //   year: '2024',
+          //   thumbnail: '/images/construction_process.png', // 或者完整的线上 URL
+          //   links: {
+          //     paper: 'https://arxiv.org/pdf/2403.00816',
+          //     website: 'https://tomatoyuan.github.io/paperWebTest/',
+          //     code: 'https://github.com/tomatoyuan/paperWebTest',
+          //     demo: 'https://xxx',
+          //   },
+          // },
           {
-            title: 'Constructing Document Reasoning Data for Question Answering',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
-            year: '2024',
-            thumbnail: '/images/construction_process.png', // 或者完整的线上 URL
+            title: 'DocAssistant: Integrating Key-region Reading and Step-wise Reasoning for Robust Document Visual Question Answering',
+            authors: 'Authors TBD',
+            venue: 'Findings of EMNLP 2025 (CCF-B)',
+            year: '2025',
+            thumbnail: '/images/intro.png', // 或者完整的线上 URL
             links: {
-              paper: 'https://arxiv.org/pdf/2403.00816',
-              website: 'https://tomatoyuan.github.io/paperWebTest/',
-              code: 'https://github.com/tomatoyuan/paperWebTest',
-              demo: 'https://xxx',
+              paper: 'https://dl.acm.org/doi/10.1145/3664647.36807',
             },
           },
         ],
@@ -527,13 +542,23 @@ export const researchDirections: ResearchDirection[] = [
           en: 'Enhance LLM positioning capability through cross-modal attention mechanisms that fuse text and visual features, combined with text guidance and balanced attention.',
         },
         papers: [
+          // {
+          //   title: 'Enhancing Model Positioning Capability for Document Understanding',
+          //   authors: 'Author 1, Author 2',
+          //   venue: 'Conference/Journal',
+          //   year: '2024',
+          //   links: {
+          //     paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+          //   },
+          // },
           {
-            title: 'Enhancing Model Positioning Capability for Document Understanding',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
-            year: '2024',
+            title: 'DocRouter: Prompt guided vision transformer and Mixture of Experts connector for document understanding',
+            authors: 'Authors TBD',
+            venue: 'Information Fusion (SCI Q1, JCR Q1, IF=15.5)',
+            year: '2025',
+            thumbnail: '/images/introduction.png', // 或者完整的线上 URL
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: 'http://dx.doi.org/10.1016/j.inffus.2025.103206',
             },
           },
         ],
@@ -549,13 +574,23 @@ export const researchDirections: ResearchDirection[] = [
           en: 'Enhance information retrieval capabilities for document question answering through OCR text retrieval, multimodal similarity retrieval, and keyword confidence retrieval.',
         },
         papers: [
+          // {
+          //   title: 'Retrieval Augmentation Methods for Document Intelligence',
+          //   authors: 'Author 1, Author 2',
+          //   venue: 'Conference/Journal',
+          //   year: '2024',
+          //   links: {
+          //     paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+          //   },
+          // },
           {
-            title: 'Retrieval Augmentation Methods for Document Intelligence',
-            authors: 'Author 1, Author 2',
-            venue: 'Conference/Journal',
+            title: 'CREAM: Coarse-to-Fine Retrieval and Multi-modal Efficient Tuning for Document VQA',
+            authors: 'Authors TBD',
+            venue: 'ACM MM 2024 (CCF-A)',
             year: '2024',
+            thumbnail: '/images/model.png', // 或者完整的线上 URL
             links: {
-              paper: 'https://arxiv.org/abs/xxxx.xxxxx',
+              paper: 'https://doi.org/10.1145/3664647.3680750',
             },
           },
         ],
@@ -576,6 +611,7 @@ export const researchDirections: ResearchDirection[] = [
             authors: 'Author 1, Author 2',
             venue: 'Conference/Journal',
             year: '2024',
+            thumbnail: '/images/rl.png', // 或者完整的线上 URL
             links: {
               paper: 'https://arxiv.org/abs/xxxx.xxxxx',
             },
