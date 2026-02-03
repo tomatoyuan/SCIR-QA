@@ -4,6 +4,7 @@ import ResearchCard from '../components/ResearchCard'
 import FlowDiagram from '../components/FlowDiagram'
 import DocumentIntelligenceDiagram from '../components/DocumentIntelligenceDiagram'
 import SemanticParsingDiagram from '../components/SemanticParsingDiagram'
+import ReasoningDiagram from '../components/ReasoningDiagram'
 import { researchDirections } from '../data/researchData'
 
 function ResearchDirection() {
@@ -47,6 +48,8 @@ function ResearchDirection() {
           <DocumentIntelligenceDiagram direction={direction} />
         ) : direction.id === 'semantic-parsing' ? (
           <SemanticParsingDiagram />
+        ) : direction.id === 'reasoning' ? (
+          <ReasoningDiagram />
         ) : (
           <FlowDiagram diagram={direction.flowDiagram} directionId={direction.id} />
         )}

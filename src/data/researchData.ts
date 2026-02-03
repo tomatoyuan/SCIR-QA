@@ -620,5 +620,93 @@ export const researchDirections: ResearchDirection[] = [
       },
     ],
   },
+  {
+    id: 'reasoning',
+    title: {
+      zh: '复杂推理',
+      en: 'Complex Reasoning',
+    },
+    description: {
+      zh: '提升复杂场景下的推理能力，解决多跳推理、常识推理等挑战。',
+      en: 'Improve reasoning capabilities in complex scenarios, addressing challenges such as multi-hop reasoning and commonsense reasoning.',
+    },
+    flowDiagram: {
+      nodes: [],
+      edges: [],
+      researchPointMapping: {},
+    },
+    researchPoints: [
+      {
+        id: 'rp1',
+        title: { zh: '研究点1: 推理过程量化分析', en: 'RP1: Reasoning Process Quantitative Analysis' },
+        description: { zh: '构建推理树与量化指标，解决错误定位问题。', en: 'Construct reasoning trees and quantitative metrics to solve error localization.' },
+        papers: [
+          {
+            title: 'Quantitative Analysis of Reasoning Processes',
+            authors: 'Author Name',
+            venue: 'Conference 2024',
+            year: '2024',
+            links: { paper: '#' }
+          }
+        ],
+      },
+      {
+        id: 'rp2',
+        title: { zh: '研究点2: 分布外空间知识对齐', en: 'RP2: OOD Spatial Knowledge Alignment' },
+        description: { zh: '通过多视角渲染和差异生成训练，解决数据与计算资源受限问题。', en: 'Address data and compute constraints via multi-view rendering and difference generation training.' },
+        papers: [
+          {
+            title: 'OOD Spatial Knowledge Alignment',
+            authors: 'Author Name',
+            venue: 'Conference 2024',
+            year: '2024',
+            links: { paper: '#' }
+          }
+        ],
+      },
+      {
+        id: 'rp3',
+        title: { zh: '研究点3: 比较式多模态推理学习', en: 'RP3: Comparative Multimodal Reasoning Learning' },
+        description: { zh: '利用相似推理合成与差异分析训练，扩展低资源下的推理能力。', en: 'Expand reasoning capabilities in low-resource settings using similar reasoning synthesis and difference analysis.' },
+        papers: [
+          {
+            title: 'Comparative Multimodal Reasoning',
+            authors: 'Author Name',
+            venue: 'Conference 2024',
+            year: '2024',
+            links: { paper: '#' }
+          }
+        ],
+      },
+      {
+        id: 'rp4',
+        title: { zh: '研究点4: 多模态注意力开关', en: 'RP4: Multimodal Attention Switch' },
+        description: { zh: '设计注意力开关状态机，结合不同模态优势进行推理。', en: 'Design an attention switch state machine to combine advantages of different modalities.' },
+        papers: [
+          {
+            title: 'Multimodal Attention Switch',
+            authors: 'Author Name',
+            venue: 'Conference 2024',
+            year: '2024',
+            links: { paper: '#' }
+          }
+        ],
+      },
+      {
+        id: 'rp5',
+        title: { zh: '研究点5: 多模态隐式思维链', en: 'RP5: Multimodal Implicit Chain of Thought' },
+        description: { zh: '通过压缩与编码技术，设计多模态隐式思维链。', en: 'Design multimodal implicit chain of thought via compression and encoding.' },
+        papers: [
+          {
+            title: 'Multimodal Implicit Chain of Thought',
+            authors: 'Author Name',
+            venue: 'Conference 2024',
+            year: '2024',
+            links: { paper: '#' }
+          }
+        ],
+      },
+    ],
+  },
 ]
 
